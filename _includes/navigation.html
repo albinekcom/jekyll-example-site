@@ -1,0 +1,9 @@
+<header>
+  <h1>Navigation</h1>
+  <nav>
+    <ul>
+      <li><a href="{{site.baseurl}}/" {% if page.url == '/' %}class="current"{% endif %}>Index</a></li>
+      <li><a href="{{site.baseurl}}/news.html" {% if page.url == '/news.html' %}class="current"{% endif %}>News</a></li>
+    </ul>
+  </nav>
+</header>

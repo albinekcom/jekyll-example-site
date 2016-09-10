@@ -1,2 +1,3 @@
 # jekyll-example-site
-An example site using Jekyll
+
+An example site using Jekyll.
