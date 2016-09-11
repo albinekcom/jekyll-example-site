@@ -5,4 +5,24 @@ title: News
 
 <h1>News</h1>
 
-<p>News text. News text. News text. News text. News text. News text. News text. News text. News text. News text. News text. News text. News text. News text. News text. News text.</p>
+<h2>Types</h2>
+
+<ol>
+  {% for type in site.data.fake-types %}
+  <li>
+    {{type.content | markdownify}}
+  </li>
+  {% endfor %}
+</ol>
+
+
+<h2>Posts</h2>
+
+<ul>
+  {% for post in site.categories.news %}
+  <li>
+    <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+    <p>{{post.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>

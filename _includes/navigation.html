@@ -1,9 +1,7 @@
-<header>
-  <h1>Navigation</h1>
-  <nav>
-    <ul>
-      <li><a href="{{site.baseurl}}/" {% if page.url == '/' %}class="current"{% endif %}>Index</a></li>
-      <li><a href="{{site.baseurl}}/news.html" {% if page.url == '/news.html' %}class="current"{% endif %}>News</a></li>
-    </ul>
-  </nav>
-</header>
+<nav>
+  <ul class="{{include.navclass}}">
+    <li><a href="{{site.baseurl}}/" {% if page.url == '/' %}class="current"{% endif %}>Index</a></li>
+    <li><a href="{{site.baseurl}}/inside/" {% if page.url contains 'inside' %}class="current"{% endif %}>Inside</a></li>
+    <li><a href="{{site.baseurl}}/news/" {% if page.url contains 'news' %}class="current"{% endif %}>News</a></li>
+  </ul>
+</nav>
