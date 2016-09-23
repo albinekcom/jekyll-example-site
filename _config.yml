@@ -1,4 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 baseurl: /jekyll-example-site
 exclude: ['LICENSE', 'README.md']
 permalink: pretty
